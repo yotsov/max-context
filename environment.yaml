@@ -1,0 +1,16 @@
+name: max_context
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12
+  # General dependencies
+  - requests
+  # Dev dependencies
+  - types-requests
+  - pytest
+  - mypy
+  - ruff
+  - vulture
