@@ -6,7 +6,7 @@ If an LLM has, say, 128k tokens max context, can it really process text that big
 
 There is a general recommendation to stick to no more than half of the max context size. But is that recommendation correct and based on evidence?
 
-To measure when the model loses focus, we generate increasingly long sequences of randomized sentences that look like "Dr. Kohob Zomoff is 29 years old." One such sentence is probably around 10 tokens.
+To measure when an Ollama-hosted model loses focus, we generate increasingly long sequences of randomized sentences that look like "Dr. Kohob Zomoff is 29 years old." One such sentence is probably around 10 tokens.
 
 Then at the end we ask the LLM a question about the first / middle / last sentence. We check then, via dichotomy, at what point it loses the ability to answer.
 
